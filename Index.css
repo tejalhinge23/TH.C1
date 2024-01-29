@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videoflix India – Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- topmost Container -->
+
+    <div class="topmostcontainer">
+        <!-- first child of topmostcontainer -->
+        <div class="headercontent">
+            <div class="logocontainer">
+                <img src="Images/logo.svg" alt="Netflixlogo" class="netflixlogo">
+            </div>
+
+            <div class="headerbuttoncontainer">
+
+                <div class="language">
+                    <img src="Images/language.svg" alt="language" class="langimg">
+                    <select class="langselect">
+                        <option value="English">English</option>
+                        <option value="Hindi">Hindi</option>
+                    </select>
+                </div>
+
+                <button class="signin">Sign In</button>
+            </div>
+        </div>
+
+        <!-- second child of topmostcontainer -->
+        <div class="box1"></div>
+
+        <!-- third child of topmostcontainer -->
+        <div class="hero">
+            <!-- hero child 1 -->
+            <div class="herotitlecontainer">
+                <h1 class="herotitle">
+                    Unlimited movies, TV shows and more
+                </h1>
+            </div>
+
+            <!-- hero child 2 -->
+            <div class="herocontentbox">
+                <p class="herodesc1">Watch anywhere. Cancel anytime.</p>
+                <p class="herodesc2">Ready to watch? Enter your email to create or restart your membership.</p>
+
+                <div class="heroinputcontainer">
+
+                    <input type="email" name="email" id="email" placeholder="Email Address" class="emailinput">
+
+                    <button class="getstartedbutton">
+                        Get Started
+                        <img src="Images/rightarrow.svg" alt="">
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- seperator line -->
+    <div class="seperator"></div>
+
+
+    <!-- first section -->
+    <section class="sections firstsection">
+        <div class="leftcontent">
+            <div class="lefttitle">
+                Enjoy on your TV
+            </div>
+            <div class="leftdesc">
+                Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
+            </div>
+        </div>
+        <div class="rightcontent">
+            <div class="imgcontainertv1">
+                <img src="Images/tv_img1.png" alt="tv" class="tv1">
+                <div class="videocontainer">
+                    <video src="Videos/tv_video1.m4v" class="tvvideo1" autoplay loop muted></video>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- seperator line -->
+    <div class="seperator"></div>
+
+    <!-- second section -->
+    <section class="sections secondsection">
+        <!-- left section -->
+        <div class="sleftcontent">
+            <div class="imgcontainerphone">
+                <img src="Images/mobile_img1.jpg" alt="tv" class="phone1">
+
+                <div class="secondsectionposter">
+                    <div class="postercontainer">
+                        <img src="Images/stranger_things_poster.png" alt="poster" class="poster1">
+                    </div>
+                    <div class="postercontent">
+                        <h4 class="postertitle">Stranger Things</h4>
+                        <p class="posterdesc">Downloading...</p>
+                    </div>
+                    <div class="postergif"></div>
+                </div>
+
+            </div> 
+        </div>
+        <!-- right section -->
+        <div class="sections second_rightcontent">
+            <div class="righttitle">
+                Download your shows to watch offline
+            </div>
+            <div class="rightdesc">
+                Save your favourites easily and always have something to watch.
+            </div>
+        </div>
+    </section>
+    <!-- seperator line -->
+    <div class="seperator"></div>
+
+    <!-- third section -->
+    <section class="sections thirdsection">
+        <div class="leftcontent">
+            <div class="lefttitle">
+                Watch everywhere
+            </div>
+            <div class="leftdesc">
+                Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.
+            </div>
+        </div>
+        <div class="rightcontent">
+            <div class="imgcontainertv1">
+                <img src="Images/devices_img1.png" alt="tv" class="tv1">
+                <div class="videocontainer3">
+                    <video src="Videos/video_2.m4v" 
+                    class="tvvideo1 tvvideo2" autoplay loop muted></video>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- seperator line -->
+    <div class="seperator"></div>
+
+    <!-- fourth section -->
+    <section class="sections fourthsection">
+        <div class="sleftcontent">
+            <div class="imgcontainertv1 fourimg">
+                <img src="Images/children_img1.png" alt="tv" class="tv1">
+            </div>
+        </div>
+        <div class="rightcontent second_rightcontent ">
+            <div class="righttitle ">
+                Create profiles for kids
+            </div>
+            <div class="rightdesc">
+                Send children on adventures with their favourite characters in a space made just for them—free with your membership.
+            </div>
+        </div>
+    </section>
+    <!-- seperator line -->
+    <div class="seperator"></div>
+
+
+    <!-- frequently asked questions -->
+    <section class="feq">
+        <div class="feqtitle">
+            Frequently Asked Questions
+        </div>
+        <div class="que que1">
+            What is Netflix?
+            <div class="feqsvg">
+                <img src="Images/plusicon.svg" alt="plus">
+            </div>
+        </div>
+        <div class="que que2">
+            How much does Netflix cost?
+            <div class="feqsvg">
+                <img src="Images/plusicon.svg" alt="plus">
+            </div>
+        </div>
+        <div class="que que3">
+            Where can I watch?
+            <div class="feqsvg">
+                <img src="Images/plusicon.svg" alt="plus">
+            </div>
+        </div>
+        <div class="que que4">
+            How do I cancel?
+            <div class="feqsvg">
+                <img src="Images/plusicon.svg" alt="plus">
+            </div>
+        </div>
+        <div class="que que5">
+            What can I watch on Netflix?
+            <div class="feqsvg">
+                <img src="Images/plusicon.svg" alt="plus">
+            </div>
+        </div>
+        <div class="que que6">
+            Is Netflix good for kids?
+            <div class="feqsvg">
+                <img src="Images/plusicon.svg" alt="plus">
+            </div>
+        </div>
+        <div class="feqfooter">
+            <div class="feqfootercontent">
+                Ready to watch? Enter your email to create or restart your membership.
+            </div>
+            <div 
+            class="heroinputcontainer heroinputcontainerf">
+                <input type="email" name="email" id="email" placeholder="Email Address" class="emailinput">
+                <button class="getstartedbutton">
+                    Get Started
+                    <img src="Images/rightarrow.svg" alt="arrow">
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- seperator line -->
+    <div class="seperator"></div>
+
+    <!-- footer content -->
+    <footer class="footercontainer">
+        <div class="questions">
+            Questions? Call <a href="#">000-800-919-1694</a>
+        </div>
+        <div class="links">
+            <div class="col col1">
+                <a href="#FAQ">FAQ</a>
+                <a href="#Investor Relations">Investor Relations</a>
+                <a href="#Privacy">Privacy</a>
+                <a href="#Speed">Speed Test</a>
+            </div>
+            <div class="col col2">
+                <a href="#Help Center">Help Centre</a>
+                <a href="#Jobs">Jobs</a>
+                <a href="#Cookie Perferences">Cookie Preferences</a>
+                <a href="#Legal Notices">Legal Notices</a>
+            </div>
+            <div class="col col3">
+                <a href="#Account">Account</a>
+                <a href="#Ways to Watch">Ways to Watch</a>
+                <a href="#Corporate Information">Corporate Information</a>
+                <a href="#Only on Netflix">Only on Netflix</a>
+            </div>
+            <div class="col col4">
+                <a href="#Media Center">Media Centre</a>
+                <a href="#Terms of use">Terms of Use</a>
+                <a href="#contact Us">Contact Us</a>
+            </div>
+        </div>
+        <div class="language">
+            <img src="Images/language.svg" alt="language" class="langimg">
+            <select class="langselect">
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+            </select>
+        </div>
+        <div class="companyname">Netflix India</div>
+    </footer>
+
+</body>
+</html>
