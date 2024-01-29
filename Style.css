@@ -1,0 +1,719 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    background-color: black;
+    overflow-x: hidden;
+}
+/* topmost container start here */
+.topmostcontainer{
+    height: 700px;
+    background-image:url("Images/netflix_background_img.jpg");
+    background-position: center center;
+    background-size:max(1400px,100vw);
+    background-repeat: no-repeat;
+    position: relative;
+}
+/* faint black layer on the background */
+.box1{
+    width: 100%;
+    height: 100%;
+    opacity: 0.69;
+    background-color: black;
+    position: absolute;
+    top:0;
+}
+/* header section start here */
+.headercontent{
+    width: 80%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding:0 2rem; */
+    /* padding-top:1.5rem; */
+    margin: 0 auto 0 auto;
+}
+.logocontainer{
+    width: 10rem;
+    height: 3rem;
+}
+.netflixlogo{
+    /* width: 11rem;
+    height: 3rem; */
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+}
+.headerbuttoncontainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    z-index: 10;
+}
+.language{
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    filter: opacity(100%);
+    border: 1px solid #777;
+    border-radius: 0.2rem;
+    padding:0.375rem 0.5rem;
+}
+.langselect{
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+.signin{
+    padding:0.5rem 1rem;
+    background-color:rgb(229,9,20);
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-style: solid;
+    border-width: 0.0625rem;
+    border-radius: 0.1875rem;
+    transition: background-color 0.2s linear 0s;
+    cursor: pointer;
+}
+.signin:hover{
+    background-color: #c30505;
+}
+
+/* content of topmost container start here */
+.hero{
+    width: 80%;
+    height: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 7rem auto 0 auto;
+}
+.herotitlecontainer{
+    width: 56.705rem;
+}
+.herotitle{
+    color: rgb(255,255,255);
+    font-size: 3rem;
+    font-weight: 900;
+}
+.herocontentbox{
+    width: 56.705rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.herodesc1{
+    color: rgb(255,255,255);
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 0.7rem 0;
+}
+.herodesc2{
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(255,255,255);
+    /* font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif; */
+    line-height:30px;
+}
+.heroinputcontainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.emailinput{
+    width: 23rem;
+    height: 3.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid rgb(255, 255, 255,0.3);
+    background-color:rgba(23,23,23,0.7);
+    padding-left: 1rem;
+    padding-top: 0.2rem;
+}
+.emailinput::placeholder{
+    color: rgb(255, 255, 255,0.7);
+    font-size: 0.95rem;
+}
+.getstartedbutton{
+    width:13rem;
+    height:3.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    background-color:rgb(229,9,20);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 1.5rem;
+    transition: background-color 0.2s linear 0s;
+    cursor: pointer;
+}
+.getstartedbutton:hover{
+    background-color: #c30505;
+}
+
+
+/* seperator start here */
+.seperator{
+    width: 100vw;
+    height:10px;
+    background-color: #2c2929;
+}
+
+/* first section start here */
+.sections{
+    width:80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin:5rem auto 5rem auto;
+}
+.leftcontent{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    color: white;
+}
+.lefttitle{
+    font-size: 3rem;
+    font-weight: 900;
+    /* font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif; */
+}
+.leftdesc{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.rightcontent{
+    width:40vw;
+}
+.imgcontainertv1{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.tv1{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+}
+.videocontainer
+{
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    position: absolute;
+    top: 20%;
+    left: 13%;
+    text-align: center;
+}
+.tvvideo1{
+    /* position: absolute;
+    top: 5rem;
+    left: 5rem; */
+    display: inline-block;
+    vertical-align: baseline;
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+/* second section start here  */
+.sleftcontent{
+    width: 50%;
+    display: flex;
+}
+.imgcontainerphone{
+    width: 100%;
+    height: 100%; 
+    position: relative;
+}
+.phone1{
+    width: 100%;
+    height: 100%;
+}
+.secondsectionposter{
+    width: 55%;
+    min-width: 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.75rem;
+    background: rgb(0,0,0);
+    box-shadow: 0 0 2em 0 rgb(0,0,0);
+    border: 2px solid rgba(128,128,128,0.7);
+    margin: 0 auto;
+    padding: 0.5rem 0.75rem;
+    position: absolute;
+    left: 23%;
+    bottom: 8%;
+    z-index: 1;
+    overflow: hidden;
+}
+.postercontainer{
+    width: 3.571rem;
+    height: 5rem;
+}
+.poster1{
+    width: 100%;
+    height: 100%;
+}
+.postercontent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:0.2rem;
+    color: white;
+    margin-right: 3rem;
+}
+.postertitle{
+    font-weight: 500;
+    font-size: 1rem;
+    color: #ffffff;
+}
+.posterdesc{
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: #0071eb;
+}
+.postergif{
+    width: 3rem;
+    height:3.75rem;
+    background: url("Videos/gif-icon.gif");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    outline: 2px solid rgb(0,0,0);
+}
+
+.second_rightcontent{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    color: white;
+}
+.righttitle{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.rightdesc{
+    font-size: 1.5rem;
+}
+
+/* third section */
+.videocontainer3{
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 63%;
+    max-height: 47%;
+    top: 9%;
+    left:19%;
+    text-align: center;
+}
+.tvvideo2{
+    display: inline-block;
+    vertical-align: baseline;
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+/* feq start here */
+.feq{
+    width: 80vw;
+    margin:3rem auto 0 auto;
+}
+.feqtitle{
+    font-size: 3rem;
+    font-weight: 900;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.que{
+    font-size: 1.5rem;
+    font-weight: 400;
+    width: 100%;
+    color: rgb(255,255,255);
+    margin-bottom: 0.5rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(45,45,45);
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.5s linear 0s;
+}
+.que:hover{
+    background-color: rgb(81, 80, 80);
+}
+.que1{
+    margin-top: 2rem;
+}
+.feqfooter{
+    width: 100%;
+    margin: 3rem auto 0 auto ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+.feqfootercontent{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #ffffff;
+}
+.heroinputcontainerf{
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+
+/* footer part start here */
+.footercontainer{
+    width: 80vw;
+    margin: 4rem auto 4rem auto ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+}
+.footercontainer a{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+}
+.links{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 8rem;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap:1rem;
+}
+.col4{
+    padding-bottom: 2.5rem;
+}
+
+/* media queries start here */
+@media screen and  (max-width:1280px) {
+    .headercontent{
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:0 2rem;
+        margin: 0 auto 0 auto;
+    }
+    .headerbuttoncontainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        position: relative;
+        z-index: 10;
+        padding-right: 2rem;
+    }
+
+}
+
+@media screen and (max-width:960px) {
+    .topmostcontainer{
+        height: 500px;
+    }
+    .headercontent{
+        margin-left: 1rem;
+    }
+    .herotitlecontainer{
+        width: 100%;
+        text-align: center;
+    }
+    .herotitle{
+        font-size: 2rem;
+    }
+    .herocontentbox{
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+    .herodesc1{
+        font-size:1.125rem;
+    }
+    .herodesc2{
+        font-size:1.125rem;
+    }
+    .heroinputcontainer{
+        margin:auto;
+    }
+    .emailinput{
+        width: 22.5rem;
+    }
+    .getstartedbutton{
+        width: 12.5rem;
+    }
+    .sections{
+        flex-direction: column;
+    }
+    .leftcontent{
+        width: 100%;
+    }
+    .lefttitle{
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 700;
+    }
+    .leftdesc{
+        font-size: 1.125rem;
+        text-align: center;
+        font-weight: 400;
+    }
+    .rightcontent{
+        width: 80%;
+    }
+
+    .secondsection{
+        max-width:80vw;
+        gap: 0;
+        margin: 3rem  auto 3rem auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .second_rightcontent{
+        width: 100%;
+        gap:0.5rem;
+        margin: 0;
+    }
+    .righttitle{
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    .rightdesc{
+        font-size: 1.125rem;
+        font-weight: 400;
+        text-align: center;
+    }
+    .sleftcontent{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgcontainerphone{
+        width: 80%;
+        height: 80%;
+    }
+
+
+    .fourthsection{
+        flex-direction: column-reverse;
+    }
+    .fourimg{
+        width: 80%;
+    }
+    .feq{
+        width: 90vw;
+    }
+    .feqtitle{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .que{
+        font-size: 1.125rem;
+        font-weight: 400;
+    }
+    .feqfootercontent{
+        font-size: 1.125rem;
+        font-weight: 400;
+        line-height: 27px;
+    }
+    .links{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .col{
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .heroinputcontainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .getstartedbutton{
+        width: 40%;
+        font-size: 1.125rem;
+        font-weight: 500;
+        text-align: center;
+        padding-left: 1.9rem;
+    }
+    .sections{
+        width: 90vw;
+    }
+    .rightcontent{
+        width:90vw;
+    }
+    .imgcontainertv1{
+        display: flex;
+        justify-content: center;
+    }
+
+    .secondsection{
+        max-width:90vw;
+    }
+    
+    .sleftcontent{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgcontainerphone{
+        width: 100%;
+        height: 100%;
+    }
+    .secondsectionposter{
+        width: 55%;
+        min-width: 15rem;
+        /* width: 19.794rem; */
+        /* height: 6.45rem; */
+    
+        left: 15%;
+        bottom: 8%;
+        gap: 0rem;
+    }
+    .secondsectionposter{
+        width: 70%;
+    }
+    .postercontainer{
+        width: 3.571rem;
+        width: 3rem;
+        height: 3.75rem;
+    }
+    .postercontent{
+        margin-right: 7rem;
+    }
+    .feqfootercontent{
+        text-align: center;
+    }
+    .heroinputcontainerf{
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .emailinput{
+        width: 100%;
+    }
+    .getstartedbutton{
+        width: 40%;
+        text-align: center;
+    }
+}
+@media screen and (max-width:480px) {
+    .headercontent{
+        width: 100%;
+        height: 10vh;
+        padding: 0;
+        margin: 0;
+    }
+    .logocontainer{
+        width: 6rem;
+        height: 2rem;
+        padding-left: 1rem;
+    }
+    .langimg{
+        display:none;
+    }
+    .langselect{
+        padding: 0;
+        font-size: 0.7rem;
+        font-weight: 300;
+    }
+    .headerbuttoncontainer{
+        gap:0.5rem;
+        padding-right: 1rem;
+    }
+    .signin{
+        padding:0.2rem 0.5rem;
+    }
+    .herotitle{
+        font-weight: 700;
+    }
+    .hero{
+        margin-top: 2rem;
+        width: 90%;
+        height:max-content;
+    }
+    .herocontentbox{
+        margin-bottom: 0;
+    }
+    .emailinput{
+        width: 90%;
+    }
+    .getstartedbutton{
+        width: 50%;
+        padding-left: 0 0.2rem;
+    }
+    .secondsectionposter{
+        width: 80%;
+        padding: 0 0.75rem;
+        left: 10%;
+    }
+    .postercontainer{
+        width: 20%;
+        height: 35%;
+    }
+    .postercontent{
+        width:100%;
+        margin: 0 0 0 1rem;
+    }
+    .postergif{
+        height: 2rem;
+    }
+}
